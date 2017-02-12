@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>HTML 5</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    input[type="radio"] {
+      display: none;
+    }
+    
+    .magic-tabs {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .content {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+    
+    input:checked ~ .content {
+      display: block
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="magic-tabs">
+    <div class="tab tab1">
+      <input type="radio" name="a" id="a" checked/>
+      <label for="a">A</label>
+      <div class="content">
+        tab 1 contents
+      </div>
+
+    </div>
+    <div class="tab tab2">
+      <input type="radio" name="a" id="b" />
+      <label for="b">B</label>
+      <div class="content">
+        tab 2 contents
+      </div>
+
+    </div>
+    <div class="tab tab3">
+      <input type="radio" name="a" id="c" />
+      <label for="c">C</label>
+      <div class="content">
+        tab 3 contents
+      </div>
+
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
